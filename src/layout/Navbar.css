@@ -1,0 +1,41 @@
+.navbar{
+    padding: 20 !important;
+}
+.logo{
+    width:40px !important;
+    height: auto;
+    border-radius: 100px;
+}
+.logo-text{
+    padding-left: 15px;
+}
+
+.searchButton{
+    margin-right: 15px;
+    
+}
+
+.nav-link {
+    position: relative; /* Chiziq uchun pozitsiya belgilash */
+    text-decoration: none; /* Standart chiziqni olib tashlash */
+    color: #f8f9fa; /* Navbar link rangi */
+  }
+  
+  .nav-link::after {
+    content: ""; /* Bo'sh kontent */
+    display: block; /* Chiziqni blok sifatida ko'rsatish */
+    height: 2px; /* Chiziq balandligi */
+    width: 0; /* Boshlanishda chiziq kengligi 0 */
+    background: #ffffff; /* Chiziq rangi */
+    transition: width 0.3s ease; /* Silliq o'tish */
+    position: absolute; /* Pozitsiya */
+    left: 50%; /* O'ng va chap tomondan teng masofada joylashish */
+    bottom: -5px; /* Chiziqning pastki qismi */
+    transform: translateX(-50%); /* Chiziqni o'rtaga joylashtirish */
+  }
+  
+  .nav-link:hover::after {
+    width: 100%; /* Hover qilinganda chiziq kengligi 100% ga o'zgaradi */
+  }
+  
+
